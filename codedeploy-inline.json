@@ -1,0 +1,19 @@
+{
+  "Version":"2012-10-17",
+  "Statement":[
+    {
+      "Effect":"Allow",
+      "Action":[
+        "s3:GetObject","s3:ListBucket",
+        "ec2:Describe*","ec2:RunInstances","ec2:TerminateInstances","ec2:CreateTags",
+        "autoscaling:CreateAutoScalingGroup","autoscaling:UpdateAutoScalingGroup","autoscaling:Describe*",
+        "elasticloadbalancing:*",
+        "iam:PassRole",
+        "tag:GetResources","tag:TagResources",
+        "cloudwatch:PutMetricData",
+        "logs:CreateLogGroup","logs:CreateLogStream","logs:PutLogEvents"
+      ],
+      "Resource":"*"
+    }
+  ]
+}
